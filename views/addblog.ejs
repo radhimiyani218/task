@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add blog</title>
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <%- include('header') %>
+   <center>
+    <form action="/blog/create" method="post" id="blogForm">
+        <label>Title</label>
+          <input type="text" name="title" id="title" >
+          <br><br>
+          <label>Body</label>
+          <input type="text" name="body" id="body" >
+          <br><br>
+          <label>Createdby</label>
+          <input type="text" name="createdby" id="createdby" >
+          <br><br>
+          <label>Active</label>
+          <input type="text" name="active" id="active" >
+          <br><br>
+          <label>Geolocation</label>
+          <input type="text" name="Geolocation" id="Geolocation" >
+          <br><br>
+          <input type="submit" class="btn"> 
+  </form>
+   </center>
+</body>
+</html>
